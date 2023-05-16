@@ -42,16 +42,30 @@ echo "Connected to database (Winkel)";
     <input type="button" placeholder="button">
 
 <?php
-if($_POST){
+if(isset($_POST)){
 $product_naam = $_POST['product_naam'];
 $prijs_per_stuk = $_POST['prijs_per_stuk'];
 $omschrijving = $_POST['omschrijving'];}
 
-$query='insert into data (product_naam, prijs_per_stuk, omschrijving) values (?, ?, ?)';
-$result=$pdo->prepare($query);
-$data=array("wit brood","1", "6 witte bollen");
-$result->execute($data);
-
+$data = [
+    ['Witte bollen','1', '6 witte ollen'],
+    ['Bruine bollen','1', '6 bruine bollen'],
+    ['water', '0,60', '300ml water'],
+    ['wit brood', '1,50', '1 heel wit brood'],
+    ['haribo', '1,50', 'haribo snoep aardbeien'],
+];
+$stmt = $pdo->prepare("INSERT INTO producten (product_naam, prijs_per_stuk, omschrijving) VALUES (?,?,?)");
+try {
+    $pdo->beginTransaction();
+    foreach ($data as $row)
+    {
+        $stmt->execute($row);
+    }
+    $pdo->commit();
+}catch (Exception $e){
+    $pdo->rollback();
+    throw $e;
+}
 
 ?>
 
