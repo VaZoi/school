@@ -32,6 +32,7 @@ $cijfersPHP = [4.4, 4.6, 5.6, 6.1, 7.6, 7.2];
 $gemiddelde = array_sum($cijfersPHP) / count($cijfersPHP);
 echo "Gemiddelde is: " . round($gemiddelde, 1);
 
-//comment// samenvoegen vind ik het beter want het is kleiner en duidelijker geschreven.
+//Deel 4B
+//comment samenvoegen vind ik het beter want het is kleiner en duidelijker geschreven.
 
 ?>
