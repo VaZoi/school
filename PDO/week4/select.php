@@ -12,7 +12,7 @@
 <?php
 
 $host = 'localhost:3307';
-$db = 'Winkel';
+$db = 'winkel';
 $user = 'root';
 $pass = '';
 $charset = 'utf8mb4';
