@@ -31,6 +31,29 @@ try {
     throw new \PDOException($e->getMessage(), (int) $e->getCode());
 }
 
+// 1 Hoe je alles selecteert in een query zonder variable
+$data = $pdo->query("SELECT * FROM producten")->fetchAll();
+
+foreach ($data as $row) {
+    echo $row['product_code'] . "<br />\n";
+    echo $row['product_naam'] . "<br />\n";
+    echo $row['prijs_per_stuk'] . "<br />\n";
+    echo $row['omschrijving'] . "<br />\n";
+}
+
+// 2 Hoe je een single row selecteert met placeholders
+
+$data = $pdo->prepare("SELECT * FROM producten WHERE product_code= 1");
+$data->execute(['product_code' => $product_code]);
+$user = $stmt->fetch();
+
+// 3 Hoe je een single row selecteert met named parameters
+
+$data = $pdo->prepare("SELECT * FROM producten WHERE product_code= 2");
+$data->execute([$product_code]);
+$user = $stmt->fetch();
+
+
 ?>
 </body>
 
