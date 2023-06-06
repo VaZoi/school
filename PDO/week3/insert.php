@@ -39,32 +39,20 @@ echo "Connected to database (Winkel)";
     <input type="text" id="product_naam" name="product_naam" placeholder="product_naam"><br>
     <input type="number" id="prijs_per_stuk" name="prijs_per_stuk" placeholder="prijs_per_stuk"><br>
     <input type="text" id="omschrijving" name="omschrijving" placeholder="omschrijving"><br>
-    <input type="button" placeholder="button">
+    <input type="button" placeholder="product toevoegen">
 
 <?php
-if(isset($_POST)){
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $product_naam = $_POST['product_naam'];
 $prijs_per_stuk = $_POST['prijs_per_stuk'];
-$omschrijving = $_POST['omschrijving'];}
+    $omschrijving = $_POST['omschrijving'];
 
-$data = [
-    ['Witte bollen','1', '6 witte ollen'],
-    ['Bruine bollen','1', '6 bruine bollen'],
-    ['water', '0,60', '300ml water'],
-    ['wit brood', '1,50', '1 heel wit brood'],
-    ['haribo', '1,50', 'haribo snoep aardbeien'],
-];
-$stmt = $pdo->prepare("INSERT INTO producten (product_naam, prijs_per_stuk, omschrijving) VALUES (?,?,?)");
-try {
-    $pdo->beginTransaction();
-    foreach ($data as $row)
-    {
-        $stmt->execute($row);
-    }
-    $pdo->commit();
-}catch (Exception $e){
-    $pdo->rollback();
-    throw $e;
+    $gegevensformulier = array($product_naam, $prijs_per_stuk, $omschrijving);
+
+    $stmt = $pdo->prepare("INSERT INTO producten (product_naam, prijs_per_stuk, omschrijving) VALUES (?,?,?)");
+
+    $resultaat = $stmt->execute($gegevensformulier);
+
 }
 
 ?>
