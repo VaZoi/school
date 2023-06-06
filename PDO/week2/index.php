@@ -15,12 +15,13 @@ $options = [
 try 
 {
      $pdo = new PDO($dsn, $user, $pass, $options);
+     echo "Connected to database (Winkel)";
 } 
 catch (\PDOException $e) 
 {
      throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
 
-echo "Connected to database (Winkel)";
+
 
 ?>
