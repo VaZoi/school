@@ -1,12 +1,12 @@
 <?php
 
-
-if (date("H") <= 12) {
-    echo "Goedemorgen";
-} else if (date(H) >= 12 && date("H") <= 18) {
-    echo "Goedemiddag";
+$date = date("H:i");
+if ($date < 12.00) {
+    echo "Goedemorgen <br>";
+} else if ($date >= 12.00 && $date < 18.00) {
+    echo "Goedemiddag <br>";
 } else {
-    echo "Goedenavond";
+    echo "Goedenavond <br>";
 }
 
 $a = 9 + 5 / 2;
