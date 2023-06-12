@@ -25,7 +25,7 @@ echo "Nog " . $dagen . " dagen tot het einde van het jaar <br>";
 
 $pdr4 = array("blauw", "Paars", "Rood", "Groen", "Roze", "Geel");
 foreach ($pdr4 as $dr4) {
-    $all = strlen($dr4);
+    echo strlen($dr4);
 }
 
 ?>
