@@ -1,5 +1,6 @@
 <?php
 
+// opdracht 1
 $date = date("H:i");
 if ($date < 12.00) {
     echo "Goedemorgen <br>";
@@ -9,7 +10,22 @@ if ($date < 12.00) {
     echo "Goedenavond <br>";
 }
 
+// opdracht 2
 $a = 9 + 5 / 2;
-echo "$a";
+echo "$a <br>";
+
+// opdracht 3
+echo "Vandaag is het " . date("Y-m-d") . "<br>";
+
+$future = strtotime("January 01 2024");
+$dagen = ceil(($future - time()) / 60 / 60 / 24);
+echo "Nog " . $dagen . " dagen tot het einde van het jaar <br>";
+
+// opdracht 4
+
+$pdr4 = array("blauw", "Paars", "Rood", "Groen", "Roze", "Geel");
+foreach ($pdr4 as $dr4) {
+    $all = strlen($dr4);
+}
 
 ?>
