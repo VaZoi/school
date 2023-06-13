@@ -11,8 +11,12 @@ if ($date < 12.00) {
 }
 
 // opdracht 2
-$a = 9 + 5 / 2;
-echo "$a <br>";
+function optellen($a, $b)
+{
+    return $a + $b / 2;
+}
+
+echo optellen(9, 15);
 
 // opdracht 3
 echo "Vandaag is het " . date("Y-m-d") . "<br>";
@@ -24,8 +28,14 @@ echo "Nog " . $dagen . " dagen tot het einde van het jaar <br>";
 // opdracht 4
 
 $pdr4 = array("blauw", "Paars", "Rood", "Groen", "Roze", "Geel");
-foreach ($pdr4 as $dr4) {
-    echo strlen($dr4);
+
+function intarray($f)
+{
+    foreach ($f as $dr4) {
+        $x = strlen($dr4);
+    }
 }
 
-?>
+intarray($pdr4)
+
+    ?>
