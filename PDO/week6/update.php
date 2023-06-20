@@ -32,7 +32,27 @@ if ($_SERVER["REQUEST_METHOD"])
 
 ?>
 <body>
-    
+<form method="post">
+    <input type="text" id="product_naam" name="product_naam" placeholder="product_naam"><br>
+    <input type="number" id="prijs_per_stuk" name="prijs_per_stuk" placeholder="prijs_per_stuk"><br>
+    <input type="text" id="omschrijving" name="omschrijving" placeholder="omschrijving"><br>
+    <input type="button" placeholder="product toevoegen">
+
+<?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $product_naam = $_POST['product_naam'];
+        $prijs_per_stuk = $_POST['prijs_per_stuk'];
+        $omschrijving = $_POST['omschrijving'];
+
+        $gegevensformulier = array($product_naam, $prijs_per_stuk, $omschrijving);
+
+        $stmt = $pdo->prepare("UPDATE producten (product_naam, prijs_per_stuk, omschrijving)WHERE product_code = 2; VALUES (?,?,?)");
+
+    $resultaat = $stmt->execute($gegevensformulier);
+
+}
+
+?>
 
 </body>
 </html>
