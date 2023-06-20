@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"])
 
         $gegevensformulier = array($product_naam, $prijs_per_stuk, $omschrijving);
 
-        $stmt = $pdo->prepare("UPDATE producten (product_naam, prijs_per_stuk, omschrijving)WHERE product_code = 2; VALUES (?,?,?)");
+    $stmt = $pdo->prepare("UPDATE producten SET (product_naam, prijs_per_stuk, omschrijving)WHERE product_code = 2; VALUES (?,?,?)");
 
     $resultaat = $stmt->execute($gegevensformulier);
 
