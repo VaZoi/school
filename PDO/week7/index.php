@@ -40,6 +40,6 @@ try {
         echo $row['omschrijving'] . "<br />\n";
     }
     ?>
-<a href="delete.php">Delete</a>
+<a href="delete.php?product_code=2">Delete</a>
 </body>
 </html>
