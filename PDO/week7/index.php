@@ -31,7 +31,7 @@ try {
 </head>
 <body>
     <?php
-    
+
     $data = $pdo->query("SELECT * FROM producten")->fetchAll();
     foreach ($data as $row) {
         echo $row['product_code'] . "<br />\n";
@@ -40,5 +40,6 @@ try {
         echo $row['omschrijving'] . "<br />\n";
     }
     ?>
+<a href="delete.php">Delete</a>
 </body>
 </html>
