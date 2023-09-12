@@ -1,0 +1,4 @@
+1. eerst heb ik de tabel veranderd door alter table en dan modify.
+
+2.om dubbele data weg tehalen heb ik eerst de tabel verwijderd en 
+dan de dubbele data gewijzigd en dan de tabel opnieuw gemaakt.
