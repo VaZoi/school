@@ -105,6 +105,12 @@ echo "This is not a valid email address.";
         return false;
     }
 
+    if (userIsAdmin($conn)) {
+        $userColor = isset($_POST['color']) ? $_POST['color'] : 'red';
+    } else {
+        $userColor = 'red';
+    }
+
     ?>
     <hr/>
     <div class="disclosure-notice">
