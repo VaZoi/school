@@ -1,0 +1,82 @@
+body {
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: gold;
+    border-style: solid;
+    border-color: gold;
+    width: 100%;
+    margin-top: 15px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding: 10px ;
+}
+
+
+
+.all {
+    background-color: black;
+    display: flex;
+   gap: 20px;
+flex-direction: row;
+flex-wrap: wrap;
+text-align: center;
+margin-top: 20px;
+justify-content: center;
+}
+
+.bot {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.one {
+    width: 40%;
+    border-style: solid;
+    border: 1px;
+    border-style: solid;
+    border-color: gold;
+    border-radius: 10px;
+
+}
+
+.two {
+    width: 40%;
+    border: 1px;
+    border-style: solid;
+    border-color: gold;
+    border-radius: 10px;
+}
+
+.three {
+    width: 60%;
+    border: 1px;
+    border-style: solid;
+    border-color: gold;
+    border-radius: 10px;
+    
+}
+
+.bone {
+    width: 25%;
+    text-align: center;
+}
+
+div  > h2 {
+    color: gold;
+}
+
+div > p {
+    color: white;
+}
+
+.bottom {
+    margin-top: 50px;
+}

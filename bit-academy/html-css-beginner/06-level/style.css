@@ -1,0 +1,24 @@
+
+
+
+
+
+
+input {border-radius: 5px ;}
+
+label {display: block;}
+
+textarea {display: block;
+    outline: none;
+border-color: red;
+width: 500px;
+height: 150px;
+border-style: solid;
+border-width: thick;
+}
+
+textarea:focus {
+    border-color: rgb(0, 255, 0);
+  }
+
+  

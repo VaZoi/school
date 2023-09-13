@@ -1,0 +1,26 @@
+h1 {
+    color:rgb(0, 95, 219);
+}
+
+h3 {   color:rgb(0, 220, 228);  }
+
+li {  color:  rgb(54, 54, 54); }
+
+div.a {font-size: 250%; }    
+div.b {font-size: 175%; }
+div.c {font-size: 125%; }
+    
+body {
+    background-color: rgb(219, 246, 255);
+    opacity: 1;
+  }
+
+  img.one {
+    height: 10%;
+    width: 10%;
+  }
+
+  .myDiv {
+    border: 5px outset lightpink;
+    background-color: rgb(247, 183, 255);
+    text-align: center; }

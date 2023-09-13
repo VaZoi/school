@@ -1,0 +1,29 @@
+
+table, th, td {
+    border-collapse: collapse;
+    
+    padding: 20px;
+  }
+
+
+.oranje {background-color: rgb(255, 123, 0);
+
+    border: solid lightgray;
+}
+
+
+.paars {background-color: plum;
+border: solid lightgray;}
+
+.blauw {background-color: lightblue;
+    border: solid lightgray;
+}
+
+.geel {background-color: rgb(242, 255, 126);
+    border: solid lightgray;
+}
+
+.zwart {color: black;}
+
+td:hover {background-color: lightgreen;
+cursor: grab;} 

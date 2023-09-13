@@ -1,0 +1,41 @@
+
+
+header {
+    padding: 25px;
+    text-align: center;
+    background-color: orange ;
+margin: 5px;
+}
+
+
+section {
+  display: flex;
+    text-align: center;
+ flex: 200%;
+
+}
+
+.aside {
+    background-color: lightblue;
+  padding-bottom: 650px;
+  margin: 5px;
+    flex-shrink: 1;
+    flex: 1;}
+
+  .aside:last-child {
+    background-color: lightgreen;
+  }
+
+.content {
+    text-align: center;
+    flex: 3;
+    background-color: beige;
+    margin: 5px;
+    }
+
+
+    footer {
+        margin: 5px;
+        padding: 25px;
+        text-align: center;
+        background-color: pink;}

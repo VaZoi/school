@@ -1,0 +1,47 @@
+h1 {
+    color:rgb(0, 95, 219);
+}
+
+h3 {   color:rgb(0, 220, 228);  }
+
+li {  color:  rgb(54, 54, 54); }
+
+div.a {font-size: 250%; }    
+div.b {font-size: 175%; }
+div.c {font-size: 125%; }
+    
+body {
+    background-color: rgb(219, 246, 255);
+    opacity: 1;
+  }
+
+  img.one {
+    height: 10%;
+    width: 10%;
+  }
+
+  .myDiv {
+    border: 5px outset lightpink;
+    background-color: rgb(247, 183, 255);
+    text-align: center; }
+
+    section {display: block;}
+
+    .browser{background: lightgray;}
+
+    p.bottom {border-bottom: 1px black ;}
+
+    nav {text-align: center ;
+    font-size: 200%;}
+
+    footer {text-align: center;
+    background-color: linen;
+  font-size: 200%;}
+
+  p.bottom {border-bottom: thin;
+  border-color: black;
+border-style: solid;
+border-top: none;
+border-left: none;
+border-right: none;}
+

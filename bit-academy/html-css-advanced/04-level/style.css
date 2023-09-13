@@ -1,0 +1,30 @@
+.navbar {
+background-color: orange;
+justify-content: space-around; 
+display: flex;
+}
+
+p{margin: 20px;}
+
+.content{
+background-color: bisque;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+}
+
+.news {width: 30%;
+padding: 30px;
+
+}
+
+.news:first-child { width: 100%;
+    font-size: larger;
+   
+}
+
+#breaking {order: -3;
+font-size:200%;
+width: 60%;
+margin-left: 20%;
+}

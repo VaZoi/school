@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    background-color:bisque ;
+justify-content: space-around;
+padding: 30px;
+}
+
+
+p {margin: 25px;}
+
+.all {
+    display: flex;
+
+
+}
+
+.one {
+width: 50%;
+font-size: larger;
+background-color: rgb(227, 255, 191);
+text-align: center;
+padding: 40px;
+}
+
+.two {
+width: 25%;
+height: 50%;
+background-color: white;
+text-align: center;
+}
+
+.three {
+width: 25%;
+background-color: rgb(255, 229, 181);
+text-align: center;
+}
+
+

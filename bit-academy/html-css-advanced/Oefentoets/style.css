@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(255, 255, 217);
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(59, 59, 59);
+    justify-content: space-evenly;
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 12px;
+    padding: 3px;
+}
+
+.header > button {
+    background-color: rgb(255, 255, 217);
+    color: rgb(0, 0, 0);
+   border: none;
+   font-size: larger;
+   border: 2px solid rgb(59, 59, 59);
+    border-radius: 12px;
+    padding: 3px;
+    height: 40px;
+    width: 150px;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   height: 800px;
+   padding-top: 10px;
+   gap: 10px;
+   
+
+}
+
+.left {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: none;
+    font-size: large;
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.center {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: none;
+    font-size: large;
+    justify-content: center;
+    border: 2px solid rgb(59, 59, 59);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.right {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    border: none;
+    font-size: large;
+    justify-content: flex-end;
+    border: 2px solid rgb(59, 59, 59);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+button {
+    background-color: rgb(255, 255, 217);
+    color: rgb(8, 8, 8);
+    border: none;
+    font-size: larger; 
+    border: 2px solid rgb(59, 59, 59);
+    border-radius: 12px;
+    padding: 3px;
+}

@@ -1,0 +1,66 @@
+body {
+    background-image: url("background.gif");
+
+}
+
+img {
+    width: 80px;
+    height: 90px;
+  }
+
+  #one {
+    width: 400px;
+    height: 380px;
+  }
+
+  #two {
+    width: 400px;
+    height: 380px;
+  }
+
+  #three {
+    width: 400px;
+    height: 380px;
+  }
+
+  #four {
+    width: 400px;
+    height: 380px;
+  }
+
+.four:hover{
+  font-size: larger;
+}
+ 
+
+
+  .active {
+    color: #b30000;
+  }
+
+  @media screen and (max-width: 600px) {
+   
+  }
+
+  .all {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 100px;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+   
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+  }
+

@@ -1,0 +1,23 @@
+body {background-color: white;
+text-align: center;}
+
+
+img {text-align: center;}
+nav{text-align: right;}
+
+button{margin: 11px;
+    height: 1cm;
+    background: rgb(255, 255, 255);
+    border: rgb(255, 255, 255) 1px solid;
+    text-align:center;
+    border-radius:11px 0px 0px 0px }
+
+    input{width: 10cm;
+        height: 1cm;
+        border-radius: 0cm;
+        font-size:34px;
+    text-align: center;}
+
+        a{color: rgb(121, 120, 120);
+        text-align:right;}
+
