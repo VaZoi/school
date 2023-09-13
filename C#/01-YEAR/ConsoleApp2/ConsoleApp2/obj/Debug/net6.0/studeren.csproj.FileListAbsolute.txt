@@ -1,0 +1,15 @@
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\studeren.exe
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\studeren.deps.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\studeren.runtimeconfig.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\studeren.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\studeren.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.csproj.AssemblyReference.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\refint\studeren.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\studeren.genruntimeconfig.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ref\studeren.dll

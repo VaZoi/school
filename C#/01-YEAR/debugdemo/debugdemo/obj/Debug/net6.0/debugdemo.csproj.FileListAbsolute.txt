@@ -1,0 +1,15 @@
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\bin\Debug\net6.0\debugdemo.exe
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\bin\Debug\net6.0\debugdemo.deps.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\bin\Debug\net6.0\debugdemo.runtimeconfig.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\bin\Debug\net6.0\debugdemo.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\bin\Debug\net6.0\debugdemo.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.csproj.AssemblyReference.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\refint\debugdemo.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\debugdemo.genruntimeconfig.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\debugdemo\debugdemo\obj\Debug\net6.0\ref\debugdemo.dll

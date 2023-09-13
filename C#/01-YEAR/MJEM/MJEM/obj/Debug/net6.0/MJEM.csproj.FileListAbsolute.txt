@@ -1,0 +1,15 @@
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.csproj.AssemblyReference.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\bin\Debug\net6.0\MJEM.exe
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\bin\Debug\net6.0\MJEM.deps.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\bin\Debug\net6.0\MJEM.runtimeconfig.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\bin\Debug\net6.0\MJEM.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\bin\Debug\net6.0\MJEM.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\refint\MJEM.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\MJEM.genruntimeconfig.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\MJEM\MJEM\obj\Debug\net6.0\ref\MJEM.dll

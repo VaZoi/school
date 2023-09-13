@@ -1,0 +1,15 @@
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\bin\Debug\net6.0\oefen.exe
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\bin\Debug\net6.0\oefen.deps.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\bin\Debug\net6.0\oefen.runtimeconfig.json
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\bin\Debug\net6.0\oefen.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\bin\Debug\net6.0\oefen.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.csproj.AssemblyReference.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\refint\oefen.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\oefen.genruntimeconfig.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\OOP1\C#\oefen\oefen\obj\Debug\net6.0\ref\oefen.dll
