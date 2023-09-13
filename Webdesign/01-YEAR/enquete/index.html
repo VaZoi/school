@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css">
+        <title>Enquete</title>
+    </head>
+    <body>
+        <main>
+            <article>
+
+                <h1>Enquete</h1>
+                <form name="enquete" action="backend.php" method="post">
+                    <fieldset>
+                        <label for="naam">Wat is je naam?</label>
+                        <input type="text" id="naam" name="naam" size="30" required placeholder="type je naam"><br>
+
+                        <label for="email">Wat is je e-mailadres?</label>
+        <input type="text" name="email" placeholder="type je e-mailadres" /><br>
+
+        <label for="nieuwsbronnen">Wat zijn je nieuwsbronnen?</label><br>
+        <input type="checkbox" name="krenten" value="kranten">
+        <label for="kranten">kranten</label><br>
+
+        <input type="checkbox" name="tv" value="tv">
+        <label for="tv">tv</label><br>
+
+        <input type="checkbox" name="socialmedia" value="socialmedia">
+        <label for="socialmedia">socialmedia</label><br>
+
+        <input type="checkbox" name="geen" value="geen">
+        <label for="geen">geen</label><br>
+
+        <label for="klimaat">Hoe betrokken met het klimaat ben je?</label><br>
+        <select name="klimaat">
+            <option value="activist">activist</option>
+            <option value="bijnaactivist">bijna activist</option>
+            <option value="veel">Veel</option>
+            <option value="Beetjeveel">beetje veel</option>
+            <option value="weinig">weinig</option>
+            <option value="beetje">beetje</option>
+            <option value="niet">niet</option>
+        </select><br>
+
+        <label for="land">Kies je land uit de lijst:</label><br>
+        <input list="landen" name="land" id="land" />
+        <datalist id="landen">
+            <option value="Nederland"></option>
+            <option value="Frankrijk"></option>
+            <option value="Belgie"></option>
+            <option value="Spanje"></option>
+            <option value="Engeland"></option>
+            <option value="Duitsland"></option>
+            <option value="Mexico"></option>
+            <option value="Italie"></option>
+            <option value="Canada"></option>
+            <option value="Verenigde Staten"></option>
+        </datalist>
+        <br>
+
+        <label for="ervaring">Hoe was je ervaring met deze website?</label><br>
+
+        <input type="radio" name="ervaring" value="positief">
+        <label for="positief">positief</label><br>
+
+        <input type="radio" name="ervaring" value="neutraal">
+        <label for="neutraal">neutraal</label><br>
+
+        <input type="radio" name="ervaring" value="negatief">
+        <label for="negatief">negatief</label><br>
+
+        <label for="cijfer">Hoe zou je deze website beoordelen?</label><br>
+        <input type="range" name="cijfer" id="cijfer" min="1" max="5" /><br>
+
+        <label for="datum">Wat is je geboortedatum?</label><br>
+        <input required type="date" name="datum" id="datum" /><br>
+
+        <label for="commentaar">Commentaar:</label><br>
+        <textarea name="commentaar" cols="35" rows="4"
+        placeholder="Hier kun je een commentaar intikken"></textarea><br>
+
+        <button>&nbsp;Verzenden&nbsp;</button><br>
+                    </fieldset>
+                </form>
+                
+
+            </article>
+        </div>
+        </main>
+    </body>
+</html>

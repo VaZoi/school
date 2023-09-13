@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-opdracht</title>
+</head>
+
+<body>
+    <script>
+        let doorgaan = confirm("Opgave 52: Doorgaan?");
+        if (doorgaan == true) {
+            alert("Welkom bij de if-opdracht");
+        } else {
+            alert("if-opdracht onderbroken. Tot ziens!");
+            exit;
+        }
+        if (doorgaan == true) {
+            let leeftijd = prompt("Wat is je leeftijd?");
+            if (leeftijd == "") {
+                alert("leeftijd ongeldig. De if-opdracht was onderbroken.");
+                exit;
+            }
+            if (leeftijd < 17) {
+                leerplichtig = true;
+                alert("Je bent leerplichtig")
+            } else {
+                leerplichtig = false;
+                alert("Je bent niet leerplichtig")
+            }
+
+        }
+        let uur = prompt("Hoelaat is het? ");
+        if (uur <= 11) {
+            alert("Goedemorgen");
+        }
+        else if (uur >= 12 && uur < 18) {
+            alert("Goedemiddag");
+        } else {
+            alert("Goedenavond");
+        }
+    </script>
+
+</body>
+
+</html>

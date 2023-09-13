@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    background-color: rgb(43, 150, 105);
+    text-align: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 3, 214);
+   font-size: x-large;
+}
+
+#Select {
+    color: rgb(172, 3, 172);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 100px);
+}
+
+article {
+    display: flex;
+    background-color: red;
+    flex-grow: 4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    display: flex;
+    background-color: yellow;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(43, 150, 105);
+    align-items: center;
+    justify-content: center;
+height:32px;
+}
+
+p {
+    font-size: larger;
+}

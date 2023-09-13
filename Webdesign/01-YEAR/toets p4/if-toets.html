@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let doorgaan = confirm("Wilt uw doorgaan?");
+        if (doorgaan == true) {
+        } else {
+            alert("Tot ziens.");
+            exit;
+        }
+        let creditcard = prompt("Heb je een creditcard?");
+        let leeftijd = prompt("Wat is je leeftijd");
+        if (creditcard == "ja") {
+            if (leeftijd >= 18) {
+                alert("Je mag 1000 euro lenen");
+            } else {
+                alert("Je mag geen geld lenen.");
+                exit;
+            }
+        } else if (creditcard == "nee") {
+            if (leeftijd >= 18) {
+                alert("Je  mag 500 euro lenen.");
+            } else {
+                alert("Je mag geen geld lenen.");
+                exit;
+            }
+        } else {
+            exit;
+        }
+
+    </script>
+</body>
+
+</html>

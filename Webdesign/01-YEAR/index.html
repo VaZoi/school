@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewpoint" content="width=device-widht,initial-scale=1.0" />
+    </head>
+
+<body>
+    <fieldset id="input controls">
+        <h3>Input controls</h3>
+
+        <label for="email">Wat is je emailadres?</label>
+        <input type="text" name="email" placeholder="mijn@mail.nl" /><br>
+
+        <label for="wachtwoord">Wat is je wachtwoord?</label>
+        <input type="password" id="wachtwoord" name="wachtwoord" required><br>
+
+        <label for="naam">Wat is je naam?</label>
+        <input type="text" id="naam" name="naam" size="30" required><br>
+
+        <label for="telefoonnummer">Wat is je telefoonnummer?</label>
+        <input type="tel" id="telefoonnummer" name="telefoonnummer" required><br>
+
+        <label for="fruit">Wat is je favoriete fruit?</label><br>
+        <input type="checkbox" name="Fruit1" value="Appel">
+        <label for="Fruit1">Appel</label><br>
+
+        <input type="checkbox" name="Fruit2" value="Meloen">
+        <label for="Fruit2">Meloen</label><br>
+
+        <input type="checkbox" name="Fruit3" value="Banaan">
+        <label for="Fruit3">Banaan</label><br>
+
+        <label for="woonplaats">Wat is je woonplaats?</label><br>
+        <select name="woonplaats">
+            <option value="">woonplaats</option>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Rotterdam">Rotterdam</option>
+            <option value="Utrecht">Utrecht</option>
+            <option value="Alkmaar">Alkmaar</option>
+            <option value="Den haag">Den haag</option>
+        </select>
+        <br>
+
+        <label for="land">Kies een land uit de lijst</label><br>
+        <input list="landen" name="land" id="land" />
+        <datalist id="landen">
+            <option value="Nederland"></option>
+            <option value="Frankrijk"></option>
+            <option value="Belgie"></option>
+            <option value="Spanje"></option>
+            <option value="Engeland"></option>
+            <option value="Duitsland"></option>
+            <option value="Mexico"></option>
+            <option value="Italie"></option>
+            <option value="Canada"></option>
+        </datalist>
+        <br>
+
+        <label for="gerecht">Favoriete gerecht</label><br>
+
+        <input type="radio" name="gerecht" value="lasagne">
+        <label for="lasagne">lasagne</label><br>
+
+        <input type="radio" name="gerecht" value="pasta">
+        <label for="pasta">pasta</label><br>
+
+        <input type="radio" name="gerecht" value="wraps">
+        <label for="wraps">wraps</label><br>
+
+        <label for="datum">Geboortedatum:</label><br>
+        <input required type="date" name="datum" id="datum" /><br>
+
+        <label for="afspraak">Maak een afspraak tussen 9:00 en 18:00</label>
+        <input type="time" id="afspraak" name="afspraak"
+        min="09:00" max="18:00" required><br>
+        <label for="commentaar">Commentaar:</label><br>
+        <textarea name="commentaar" cols="35" rows="4"
+        placeholder="Hier kun je een commentaar intikken"></textarea><br>
+
+        <label for="cijfer">Geef een cijfer tussen 1 en 5:</label><br>
+        <input type="range" name="cijfer" id="cijfer" min="1" max="5" /><br>
+
+        <label for="bestelde-items">Bestel maximaal 3 items</label>
+        <input type="number" id="bestelde-items" name="bestelde-items" min="1" max="3"><br>
+
+        <button>&nbsp;Button&nbsp;</button><br>
+
+        <label for="zoek-projecten">Zoek projecten:</label>
+        <input type="search" id="zoek-projecten" name="zoek-projecten">
+        <button>Zoeken</button>
+        
+
+    </fieldset>
+
+</body>
+</html>
