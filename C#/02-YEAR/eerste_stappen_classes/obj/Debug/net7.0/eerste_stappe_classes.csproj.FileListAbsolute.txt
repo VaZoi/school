@@ -12,3 +12,10 @@ C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\eerste_stappen_classes\o
 C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.pdb
 C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.genruntimeconfig.cache
 C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\eerste_stappen_classes\obj\Debug\net7.0\ref\eerste_stappe_classes.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\refint\eerste_stappe_classes.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\02-YEAR\eerste_stappen_classes\obj\Debug\net7.0\eerste_stappe_classes.pdb
