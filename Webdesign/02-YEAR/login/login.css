@@ -1,0 +1,31 @@
+body {
+    background-color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 100px;
+    height: 400px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.login {
+    background-color: yellow;
+    border: none;
+    padding: 15px;
+}
+
+.form h1 {
+    text-align: center;
+}

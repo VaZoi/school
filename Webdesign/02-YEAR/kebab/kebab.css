@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: xx-large;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: xx-large;
+    height: 100vh;
+}
+
+.kebab {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.stip,
+.stip:before,
+.stip:after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: #34495e;
+}
+
+.stip {
+    top: 50%;
+    left: 40%;
+}
+
+.stip:before,
+.stip:after {
+    top: 10%;
+    content: "";
+}
+
+.stip:before {
+    right: 15px;
+}
+
+.stip:after {
+    left: 25px;
+}
+
+.lade {
+    font-size: large;
+    text-align: center;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: 1s;
+    z-index: -1;
+}
+
+#kebab:checked~.lade {
+    right: 0 !important;
+}
