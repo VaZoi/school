@@ -1,0 +1,87 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tr {
+    background-color: #666;
+    border-bottom: 1pt solid black;
+}
+
+td {
+    padding: 8px;
+}
+
+.contact_toevoegen {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #444;
+    color: white;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+td button {
+    background-color: gray;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: grey;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+a:hover {
+    text-decoration: none;
+}
