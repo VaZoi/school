@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>opdracht</title>
+</head>
+
+<body>
+    <h1>Auto Lijst</h1>
+    <div id="Car"></div>
+
+    <script>
+        fetch("Opdracht_27_09.json")
+            .then(response => response.json())
+            .then(data => {
+                const Cars = document.getElementById('Car');
+                Cars.textContent = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>
