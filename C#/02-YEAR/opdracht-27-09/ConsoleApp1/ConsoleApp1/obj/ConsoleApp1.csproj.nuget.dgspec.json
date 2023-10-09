@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "c:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "C:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\julie\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\02-YEAR\\opdracht-27-09\\ConsoleApp1\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
