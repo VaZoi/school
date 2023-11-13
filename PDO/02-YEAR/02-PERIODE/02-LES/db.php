@@ -13,7 +13,7 @@ class database {
         $this->host = 'localhost';
         $this->username = 'root';
         $this->password = '';
-        $this->database = 'test';
+        $this->database = 'school';
         $this->port = 3307;
     
         $dsn = "mysql:host=$this->host;port=$this->port;dbname=$this->database";
