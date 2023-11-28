@@ -20,17 +20,63 @@ class database {
         try {
             $this->dbh = new PDO($dsn, $this->username, $this->password);
             $this->dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connection established" . PHP_EOL;
         } catch (PDOException $e) {
             die("Connection failed: " . $e->getMessage());
         }
     }
-    public function insertProduct($product_naam, $product_beschrijving) {
-        $sql = "INSERT INTO producten (naam, beschrijving) VALUES (:naam, :beschrijving)";
+
+    public function registerUser($username, $email, $password) {
+        $sql = "INSERT INTO users (username, email, password) VALUES (:username, :email, :password)";
+
+        try {
+            $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+            $stmt = $this->dbh->prepare($sql);
+            $stmt->bindParam(':username', $username);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':password', $hashedPassword);
+
+            $stmt->execute();
+
+            echo "User successfully registered." . PHP_EOL;
+        } catch (PDOException $e) {
+            die("Registration failed: " . $e->getMessage());
+        }
+    }
+
+    public function loginUser($username, $password) {
+        $sql = "SELECT user_id, username, password FROM users WHERE username = :username";
+    
+        try {
+            $stmt = $this->dbh->prepare($sql);
+            $stmt->bindParam(':username', $username);
+            $stmt->execute();
+    
+            $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+            if ($user && password_verify($password, $user['password'])) {
+                return $user['user_id'];
+            } else {
+                return false;
+            }
+        } catch (PDOException $e) {
+            return false;
+        }
+    }
+
+    public function logoutUser() {
+        session_start();
+        session_unset();
+        session_destroy();
+    }
+
+    public function insertProduct($product_image, $product_naam, $product_beschrijving) {
+        $sql = "INSERT INTO producten (image, naam, beschrijving) VALUES (:image, :naam, :beschrijving)";
         
         try {
             $stmt = $this->dbh->prepare($sql);
 
+            $stmt->bindParam(':image', $product_image);
             $stmt->bindParam(':naam', $product_naam);
             $stmt->bindParam(':beschrijving', $product_beschrijving);
 
@@ -62,12 +108,13 @@ class database {
         }
     }
     
-    public function editProduct($product_id, $new_product_naam, $new_product_beschrijving) {
+    public function editProduct($product_id, $new_product_image, $new_product_naam, $new_product_beschrijving) {
         try {
-            $sql = "UPDATE producten SET naam = :naam, beschrijving = :beschrijving WHERE ID = :ID";
+            $sql = "UPDATE producten SET image = :image, naam = :naam, beschrijving = :beschrijving WHERE ID = :ID";
             $stmt = $this->dbh->prepare($sql);
 
             $stmt->bindParam(':ID', $product_id);
+            $stmt->bindParam(':image', $new_product_image);
             $stmt->bindParam(':naam', $new_product_naam);
             $stmt->bindParam(':beschrijving', $new_product_beschrijving);
 
