@@ -1,0 +1,14 @@
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\bin\Debug\net7.0\weer.exe
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\bin\Debug\net7.0\weer.deps.json
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\bin\Debug\net7.0\weer.runtimeconfig.json
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\bin\Debug\net7.0\weer.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\bin\Debug\net7.0\weer.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\refint\weer.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.genruntimeconfig.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\ref\weer.dll
