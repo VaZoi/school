@@ -12,3 +12,4 @@ C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7
 C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.pdb
 C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.genruntimeconfig.cache
 C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\ref\weer.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\weer\weer\obj\Debug\net7.0\weer.sourcelink.json

@@ -1,0 +1,13 @@
+/*! For license information please see liveperson.js.LICENSE.txt */
+/*
+ANWB CONVERSATIONAL
+==================================================
+Package:   chatbot
+Version:   7.4.2
+Date:      Wed Nov 22 2023 14:33:13 GMT+0100 (Central European Standard Time)
+Env:       undefined
+Git:       undefined
+==================================================;
+*/
+window.lpTag=window.lpTag||{},void 0===window.lpTag._tagCount?(window.lpTag={site:window.location.search.indexOf("LP_PlugAndPlay_Test")>0?"78082326":"68351532",section:window.lpTag.section||"",autoStart:!1!==window.lpTag.autoStart,ovr:window.lpTag.ovr||{},_v:"1.5.1",_tagCount:1,protocol:location.protocol,events:{bind:function(t,i,n){window.lpTag.defer((function(){window.lpTag.events.bind(t,i,n)}),0)},trigger:function(t,i,n){window.lpTag.defer((function(){window.lpTag.events.trigger(t,i,n)}),1)}},defer:function(t,i){0==i?(this._defB=this._defB||[],this._defB.push(t)):1==i?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,i,n){var o=this;setTimeout((function(){o._load(t,i,n)}),0)},_load:function(t,i,n){var o=t;t||(o=this.protocol+"//"+(this.ovr&&this.ovr.domain?this.ovr.domain:"lptag.liveperson.net")+"/tag/tag.js?site="+this.site);var e=document.createElement("script");e.setAttribute("charset",i||"UTF-8"),n&&e.setAttribute("id",n),e.setAttribute("src",o),document.getElementsByTagName("head").item(0).appendChild(e)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent("onload",(function(){t._domReady("domReady")})):(window.addEventListener("DOMContentLoaded",(function(){t._domReady("contReady")}),!1),window.addEventListener("load",(function(){t._domReady("domReady")}),!1)),void 0===window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger("LPT","DOM_READY",{t:t})),this._timing[t]=(new Date).getTime()},vars:window.lpTag.vars||[],dbs:window.lpTag.dbs||[],ctn:window.lpTag.ctn||[],sdes:window.lpTag.sdes||[],ev:window.lpTag.ev||[]},window.lpTag.init()):window.lpTag._tagCount+=1,window.chat={};
+//# sourceMappingURL=liveperson.js.map

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A80FFA;
+    margin: 0;
+    padding: 0;
+}
+
+#id01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+    text-align: center;
+    color: #A80FFA;
+}
+
+.container {
+    padding: 16px;
+}
+
+label {
+    color: #A80FFA;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #A80FFA;
+}
+
+button {
+    background-color: #A80FFA;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gold;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cancelbtn:hover {
+    background-color: #d32f2f;
+}
+
+.register {
+    display: flex;
+    justify-content: flex-end;
+    color: #A80FFA;
+    text-decoration: none;
+}
+
+.register:hover {
+    color: gold;
+}
+
+.animate {
+    animation: zoomIn 0.6s;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,61 @@
+/*!
+ * /*
+ * ANWB CONVERSATIONAL
+ * ==================================================
+ * Package:   chatbot
+ * Version:   7.4.2
+ * Date:      Wed Nov 22 2023 14:33:13 GMT+0100 (Central European Standard Time)
+ * Env:       undefined
+ * Git:       undefined
+ * ==================================================;
+ * * /
+ */
+.debugLogo {
+  z-index: 698;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 68px;
+  opacity: 1;
+}
+#lp-contact-en-service-chat:focus,
+#lp-contact-en-service-chat div:focus {
+  outline: 0;
+}
+#lp-contact-en-service-chat p > button {
+  border: none;
+  font-family: Verdana, Arial, sans-serif, ui-icons, illustrative-icons;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #0096db;
+  padding: 0;
+  border-radius: 0;
+}
+#lp-contact-en-service-chat p > button:hover,
+#lp-contact-en-service-chat p > button:visited {
+  color: #003c85;
+}
+/* Animation Keyframes */
+@keyframes fadeinphoto {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeinphoto {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

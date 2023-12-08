@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("weer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca55bf6c12ee1c2d88f3a286f4552d233f2fe5a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("weer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("weer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
