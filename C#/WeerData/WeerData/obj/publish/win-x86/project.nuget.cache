@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "fosTJMbwpemBAvq30Gct5lkujdMDu8oGg8l4E4ZQI9kmJVDh12D2T0LG52z67QsJ/275neVuH/ria1oQkt/cJQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\julie\\OneDrive\\Documenten\\Vakken\\Git\\school\\C#\\WeerData\\WeerData\\WeerData.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\julie\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.1\\microsoft.netcore.app.runtime.win-x86.8.0.1.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.1\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.1.nupkg.sha512",
+    "C:\\Users\\julie\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.1\\microsoft.aspnetcore.app.runtime.win-x86.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

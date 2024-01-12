@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WeerConsole/1.0.0": {
+        "dependencies": {
+          "Measurements": "1.0.0"
+        },
+        "runtime": {
+          "WeerConsole.dll": {}
+        }
+      },
+      "Measurements/1.0.0": {
+        "runtime": {
+          "Measurements.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WeerConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Measurements/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\bin\Release\net8.0\win-x64\Data.txt
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\bin\Release\net8.0\win-x64\Measurements.deps.json
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\bin\Release\net8.0\win-x64\Measurements.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\bin\Release\net8.0\win-x64\Measurements.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.AssemblyInfoInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.AssemblyInfo.cs
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.csproj.CoreCompileInputs.cache
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.sourcelink.json
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\refint\Measurements.dll
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\Measurements.pdb
+C:\Users\julie\OneDrive\Documenten\Vakken\Git\school\C#\WeerData\Measurements\obj\Release\net8.0\win-x64\ref\Measurements.dll
