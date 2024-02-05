@@ -3,29 +3,23 @@
 include("db.php");
 $db = new Database;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (
-        isset($_POST['voornaam']) && isset($_POST['achternaam']) && isset($_POST['email']) &&
-        isset($_POST['password']) && isset($_POST['geboortedatum']) && isset($_POST['adres']) &&
-        isset($_POST['telefoonnummer']) && isset($_POST['rijbewijs'])
-    ) {
-        $db->registerUser(
-            $_POST['voornaam'],
-            $_POST['achternaam'],
-            $_POST['email'],
-            $_POST['password'],
-            $_POST['geboortedatum'],
-            $_POST['adres'],
-            $_POST['telefoonnummer'],
-            $_POST['rijbewijs']
-        );
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['Voornaam'], $_POST['Achternaam'], $_POST['Email'], $_POST['Telefoonnummer'], $_POST['Geboortedatum'], $_POST['Adres'], $_POST['Wachtwoord'])) {
+    $voornaam = htmlspecialchars($_POST['Voornaam']);
+    $achternaam = htmlspecialchars($_POST['Achternaam']);
+    $email = htmlspecialchars($_POST['Email']);
+    $telefoonnummer = htmlspecialchars($_POST['Telefoonnummer']);
+    $geboortedatum = htmlspecialchars($_POST['Geboortedatum']);
+    $adres = htmlspecialchars($_POST['Adres']);
+    $Password = htmlspecialchars($_POST['Wachtwoord']);
 
-        header('Location: home.php');
-        exit();
-    } else {
-        $error_message = "Vul alle vereiste velden in.";
-    }
+    $db->registerUser($voornaam, $achternaam, $email, $telefoonnummer, $geboortedatum, $adres, $Password);
+    
+    header('Location: home.php');
+    exit();
+} else {
+    $error_message = "Vul alle vereiste velden in.";
 }
+
 
 ?>
 
@@ -53,14 +47,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <form method="post" action="register.php">
-        Voornaam: <input type="text" name="voornaam" required><br>
-        Achternaam: <input type="text" name="achternaam" required><br>
-        E-mail: <input type="email" name="email" required><br>
-        Wachtwoord: <input type="password" name="password" required><br>
-        Geboortedatum: <input type="date" name="geboortedatum" required><br>
-        Adres: <input type="text" name="adres" required><br>
-        Telefoonnummer: <input type="tel" name="telefoonnummer" required><br>
-        Rijbewijsnummer: <input type="text" name="rijbewijs" required><br>
+        Voornaam: <input type="text" name="Voornaam" required><br>
+        Achternaam: <input type="text" name="Achternaam" required><br>
+        E-mail: <input type="email" name="Email" required><br>
+        Wachtwoord: <input type="password" name="Wachtwoord" required><br>
+        Geboortedatum: <input type="date" name="Geboortedatum" required><br>
+        Adres: <input type="text" name="Adres" required><br>
+        Telefoonnummer: <input type="tel" name="Telefoonnummer" required><br>
 
         <input type="submit" value="Registreren">
     </form>

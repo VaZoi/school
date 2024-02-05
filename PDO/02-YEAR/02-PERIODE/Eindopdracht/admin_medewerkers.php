@@ -5,18 +5,16 @@ $db = new database;
 $medewerkers = $db->selectmedewerkers();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $voornaam = $_POST['voornaam'];
-    $achternaam = $_POST['achternaam'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-    $functie = $_POST['functie'];
-    $salaris = $_POST['salaris'];
-    $telefoonnummer = $_POST['telefoonnummer'];
-    $adres = $_POST['adres'];
-    $geboortedatum = $_POST['geboortedatum'];
-    $toegangsrechten = $_POST['toegangsrechten'];
+  $voornaam = htmlspecialchars($_POST['voornaam']);
+  $achternaam = htmlspecialchars($_POST['achternaam']);
+  $email = htmlspecialchars($_POST['email']);
+  $password = htmlspecialchars($_POST['password']);
+  $telefoonnummer = htmlspecialchars($_POST['telefoonnummer']);
+  $adres = htmlspecialchars($_POST['adres']);
+  $geboortedatum = htmlspecialchars($_POST['geboortedatum']);
 
     $db->addMedewerker($voornaam, $achternaam, $email, $password, $functie, $salaris, $telefoonnummer, $adres, $geboortedatum, $toegangsrechten);
+
 }
 ?>
 
@@ -50,6 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -66,6 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>
@@ -102,7 +104,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="date" name="geboortedatum" required><br>
 
         <label for="toegangsrechten">Toegangsrechten:</label>
-        <input type="text" name="toegangsrechten" required><br>
+        <input type="number" name="toegangsrechten" required><br>
 
         <input type="submit" value="Medewerker Toevoegen">
     </form>

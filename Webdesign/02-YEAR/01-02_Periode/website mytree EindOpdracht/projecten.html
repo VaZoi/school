@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="carrousel.css">
+    <script src="carrousel.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="navbar.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar"></nav>
+
+        <nav id="hamburgernav"></nav>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,cars" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,night" alt="" />
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/random?landscape,city" alt="" />
+            </div>
+            <button class="btn" id="btn-next">&#10596;</button>
+            <button class="btn" id="btn-prev">&#10594;</button>
+        </div>
+        <section>
+            <div class="search-bar">
+                <input type="text" id="zoektekst" placeholder="Zoek Project"
+                    onkeyup="zoekprojecten(document.getElementById('zoektekst').value)" />
+            </div>
+
+            <div id="zoekfunctie">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="amazonas.jpg" alt="footer">
+    </footer>
+</body>
+
+</html>

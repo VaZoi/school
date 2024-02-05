@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebab</title>
+    <link rel="stylesheet" href="kebab.css">
+    <script src="toggle.js"></script>
+</head>
+
+<body id="body">
+    <header>
+        <div class="kebab">
+            <input name="kebab" id="kebab" type="checkbox" />
+            <label class="stip" for="kebab">
+                <span></span>
+            </label>
+
+            <div class="lade">
+                <h3>Instellingen</h3>
+                <div class="toggle">
+                    <span>Light theme</span>
+                    <input type="checkbox" id="toggle" name="theme" onchange="theme();">
+                    <label for="toggle">Toggle</label>
+                    <span>&nbsp;Green theme</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <article id="content">
+        <h1>kebab-menu</h1>
+    </article>
+
+</body>
+
+</html>

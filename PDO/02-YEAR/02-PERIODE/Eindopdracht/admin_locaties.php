@@ -6,9 +6,9 @@ $db = new database;
 $locaties = $db->selectlocaties();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $naam = $_POST['naam'];
-    $adres = $_POST['adres'];
-    $telefoonnummer = $_POST['telefoonnummer'];
+    $naam = htmlspecialchars($_POST['naam']);
+    $adres = htmlspecialchars($_POST['adres']);
+    $telefoonnummer = htmlspecialchars($_POST['telefoonnummer']);
 
     $db->insertLocatie($naam, $adres, $telefoonnummer);
 }
@@ -45,6 +45,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li class="active"><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -61,6 +63,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li class="active"><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>

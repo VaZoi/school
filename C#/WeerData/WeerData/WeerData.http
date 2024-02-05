@@ -8,3 +8,7 @@ Accept: application/json
 GET {{WeerData_HostAddress}}/weatherforecast/GetAllWeather
 
 ###
+
+GET {{WeerData_HostAddress}}/weatherforecast/GetAllWeather
+
+###

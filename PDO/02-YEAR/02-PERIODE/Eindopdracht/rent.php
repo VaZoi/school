@@ -1,5 +1,6 @@
 <?php
-
+session_start();
+$displayPrice = null;
 include("db.php");
 $db = new Database;
 
@@ -21,32 +22,18 @@ $db = new Database;
         <a href="rent.php" class="active">Rent</a>
         <a href="autos.php">Auto's</a>
         <a href="booked.php">My Bookings</a>
-        <a class="login" href="login.php">Login | Register</a>
+        <?php
+          if (isset($_SESSION['user_role']) && ($_SESSION['user_role'] == 'medewerker' || $_SESSION['user_role'] == 'admin')) {
+              echo '<a href="admin.php">Admin Page</a>';
+          }
+
+          if (isset($_SESSION['user_role'])) {
+              echo '<a class="login" href="logout.php">Logout</a>';
+          } else {
+              echo '<a class="login" href="login.php">Login | Register</a>';
+          }
+        ?>
     </header>
-
-    <div id="id01" class="modal">
-        <form class="modal-content animate" action="" method="post">
-            <h2>Login Form</h2>
-    <div class="container">
-            <label for="Email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="Email" required>
-
-            <label for="Password"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="Password" required>
-
-            <button type="submit" name="login">Login</button>
-
-            <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-            <a class="register" href="Register.php">Register here</a>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        </div>
-    </form>
-    </div>
 
     <div class="rentcar">
 
@@ -55,27 +42,69 @@ $db = new Database;
 <body>
 
     <div class="prices">
+      <div class="columns">
+        <ul class="price">
+          <li class="header" style="background-color:gold">Day</li>
+          <li class="grey">&euro; 65 / Day</li>
+        </ul>
+      </div>
 
-<div class="columns">
-  <ul class="price">
-    <li class="header" style="background-color:gold">Day</li>
-    <li class="grey">&euro; 120 / day</li>
-  </ul>
-</div>
-
-<div class="columns">
-  <ul class="price">
-    <li class="header">Month</li>
-    <li class="grey">&euro; 3500 / month</li>
-  </ul>
-</div>
     </div>
 
-<footer>
-      <a href="About_Us.html">About US</a>
-      <a href="privacypolicy.html">Privacy Policy</a>
-      <a href="Algemene_huurvoorwaarden.html">Algemene Huurvoorwaarden</a>
-      <div class="allfooter">
+<section class="rentpicture">
+  
+  <div class="rentform">
+  <h2>Rent a Car</h2>
+
+        <form action="" method="post">
+            <label for="auto_id">Selecteer auto:</label>
+            <select name="auto_id" id="auto_id">
+                <?php
+                $autos = $db->selectautos();
+                foreach ($autos as $auto) {
+                    echo "<option value=\"{$auto['Auto_ID']}\">{$auto['Merk']} {$auto['Model']}</option>";
+                }
+                ?>
+            </select>
+
+            <label for="ophaaldatum">Ophaal Datum:</label>
+            <input type="date" name="ophaaldatum" required>
+
+            <label for="inleverdatum">Inlever Datum:</label>
+            <input type="date" name="inleverdatum" required>
+
+            <label for="ophaallocatie">Ophaal Locatie:</label>
+            <select name="ophaallocatie" id="ophaallocatie">
+                <?php
+                $ophaallocaties = $db->selectInleverlocatie();
+                foreach ($ophaallocaties as $locatie) {
+                    echo "<option value=\"{$locatie['naam']}\">{$locatie['naam']}</option>";
+                }
+                ?>
+            </select>
+
+            <label for="inleverlocatie">Inlever Locatie:</label>
+            <select name="inleverlocatie" id="inleverlocatie">
+                <?php
+                $inleverlocaties = $db->selectInleverlocatie();
+                foreach ($inleverlocaties as $locatie) {
+                    echo "<option value=\"{$locatie['naam']}\">{$locatie['naam']}</option>";
+                }
+                ?>
+            </select>
+
+                <?php
+                  if ($displayPrice !== null) {
+                      echo "<p>Total Price: &euro;{$displayPrice}</p>";
+                  }
+                ?>
+
+            <input type="hidden" name="status" value="In behandeling">
+
+            <button type="submit" name="rent">Boek Nu</button>
+        </form>
+  </div>
+  <div class="allfooter">
         <div class="time">
           <h2>Openingstijden:</h2>
           <p>Maandag: 8.00-22.00</p>
@@ -92,6 +121,13 @@ $db = new Database;
           <br/><br/><i class="fa fa-envelope"></i>info@vzrent.nl</p>
         </div>
       </div>
+</section>
+
+<footer>
+      <a href="About_Us.html">About US</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+      <a href="Algemene_huurvoorwaarden.html">Algemene Huurvoorwaarden</a>
+      
     </footer>
 </body>
 </html>

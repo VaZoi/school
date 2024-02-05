@@ -3,11 +3,14 @@
 include("db.php");
 $db = new database;
 
-
 if (isset($_GET['klant_id'])) {
     $klant_id = $_GET['klant_id'];
-
+    
     $bookingHistory = $db->getBookingHistory($klant_id);
+    
+} else {
+    echo "<p>Klant ID not provided.</p>";
+}
 ?>
 
 <!DOCTYPE html>
@@ -59,9 +62,6 @@ if (isset($_GET['klant_id'])) {
 
         echo "</table>";
     }
-} else {
-    echo "<p>Klant ID not provided.</p>";
-}
 ?>
 
 </body>

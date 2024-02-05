@@ -1,0 +1,17 @@
+0 NV:
+bonnummer, datum, tijd, tafel, afdeling, aantal per product, omschrijving, prijs per product, totaal prijs van product, totaal van rekening, btw, inclu_btw, exclu_btw, totaal_btw, totaal korting
+
+1 NV:
+producten: PK:product_id, omschrijving, prijs_per_stuk
+klant:klant_id, klantnaam, telefoonnummer, email,
+
+2 NV:
+producten: PK:product_id, omschrijving, prijs_per_stuk
+reserering: PK:reservering_id, FK:klant_id, datum, tijd
+Plaats: PK:tafel_id,tafelnummer, afdeling
+
+3NV:
+producten: PK:product_id, omschrijving, prijs_per_stuk
+reserering: PK:reservering_id, FK:klant_id, datum, tijd
+Plaats: PK:tafel_id, tafelnummer, afdeling
+rekening: PK:bonnummer, datum, tijd, FK:product_id, FK:tafel_id, totaal prijs van product, totaal korting, totaal rekening, btw, inclu_btw, exclu_btw, totaal_btw, aantal producten van een product

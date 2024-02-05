@@ -6,16 +6,16 @@ $db = new database;
 $autos = $db->selectautos();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $merk = $_POST['merk'];
-    $model = $_POST['model'];
-    $bouwjaar = $_POST['bouwjaar'];
-    $kenteken = $_POST['kenteken'];
-    $kleur = $_POST['kleur'];
-    $zitcapaciteit = $_POST['zitcapaciteit'];
-    $brandstoftype = $_POST['brandstoftype'];
-    $kilometerstand = $_POST['kilometerstand'];
-    $beschikbaarheid = $_POST['beschikbaarheid'];
-    $afbeelding = $_POST['afbeelding'];
+    $merk = htmlspecialchars($_POST['merk']);
+    $model = htmlspecialchars($_POST['model']);
+    $bouwjaar = htmlspecialchars($_POST['bouwjaar']);
+    $kenteken = htmlspecialchars($_POST['kenteken']);
+    $kleur = htmlspecialchars($_POST['kleur']);
+    $zitcapaciteit = htmlspecialchars($_POST['zitcapaciteit']);
+    $brandstoftype = htmlspecialchars($_POST['brandstoftype']);
+    $kilometerstand = htmlspecialchars($_POST['kilometerstand']);
+    $beschikbaarheid = htmlspecialchars($_POST['beschikbaarheid']);
+    $afbeelding = htmlspecialchars($_POST['afbeelding']);
 
     $db->addauto($merk, $model, $bouwjaar, $kenteken, $kleur, $zitcapaciteit, $brandstoftype, $kilometerstand, $beschikbaarheid, $afbeelding);
 }
@@ -51,6 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li class="active"><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -67,6 +69,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li class="active"><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>
@@ -101,16 +105,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 <label for="brandstoftype">Brandstoftype:</label>
                 <select name="brandstoftype" required>
-                <option value="Benzine">Benzine</option>
-                <option value="Elektrisch">Elektrisch</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Electric">Electric</option>
                 <option value="Diesel">Diesel</option>
                 </select><br>
 
                 <label for="kilometerstand">Kilometerstand:</label>
                 <input type="number" name="kilometerstand" required><br>
-
-                <label for="beschikbaarheid">Beschikbaarheid:</label>
-                <input type="number" name="beschikbaarheid" required><br>
 
                 <label for="afbeelding">Afbeelding:</label>
                 <input type="file" name="afbeelding" required><br>

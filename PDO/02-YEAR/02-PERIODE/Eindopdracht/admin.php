@@ -46,6 +46,8 @@ $locatiecount = $counts['locatie_count'];
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -62,6 +64,8 @@ $locatiecount = $counts['locatie_count'];
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>

@@ -4,25 +4,26 @@ session_start();
 include("db.php");
 $db = new Database;
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['Email'];
-    $password = $_POST['Password'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $wachtwoord = $_POST["wachtwoord"];
 
-    $user_type = $db->loginUser($email, $password);
+    $user = $db->getUserByEmail($email);
 
-    if ($user_type !== false) {
-        $_SESSION['user_role'] = $user_type;
-        $_SESSION['email'] = $email;
+    if ($user && $db->loginUser($email, $wachtwoord)) {
+        $_SESSION['user_role'] = $user['type'];
+        echo "Inloggen geslaagd!";
+        $_SESSION['user_id'] = $user['gebruiker_id'];
 
-        if ($user_type == 'medewerker') {
-            header('Location: admin.php');
+        if ($user['type'] == 'klant') {
+            header("Location: home.php");
             exit();
-        } else {
-            header('Location: home.php');
+        } elseif ($user['type'] == 'medewerker' || $user['type'] == 'admin') {
+            header("Location: admin.php");
             exit();
         }
     } else {
-        $error_message = "Invalid credentials. Please try again.";
+        echo "Inloggen mislukt. Controleer uw gebruikersnaam en wachtwoord.";
     }
 }
 ?>
@@ -41,10 +42,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h2>Login Form</h2>
             <div class="container">
                 <label for="Email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="Email" required>
+                <input type="text" placeholder="Enter Email" name="email" required>
 
                 <label for="Password"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="Password" required>
+                <input type="password" placeholder="Enter Password" name="wachtwoord" required>
 
                 <button type="submit" name="login">Login</button>
 

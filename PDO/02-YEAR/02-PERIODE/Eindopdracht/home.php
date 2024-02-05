@@ -1,8 +1,7 @@
 <?php
 session_start();
-include("db.php");
-$db = new Database;
-
+include "db.php";
+$db = new Database();
 ?>
 
 <!DOCTYPE html>
@@ -16,25 +15,25 @@ $db = new Database;
 </head>
 <body>
   
-    <header>
-        <img src="logometbackground.png" class="img" alt="VZRent" width="200px" height="50px">
-        <a href="home.php" class="active">Home</a>
-        <a href="rent.php" onclick="return checkLogin()">Rent</a>
-        <a href="autos.php" onclick="return checkLogin()">Auto's</a>
-        <a href="booked.php" onclick="return checkLogin()">My Bookings</a>
+<header>
+    <img src="logometbackground.png" class="img" alt="VZRent" width="200px" height="50px">
+    <a href="home.php" class="active">Home</a>
+    <a href="rent.php">Rent</a>
+    <a href="autos.php">Auto's</a>
+    <a href="booked.php">My Bookings</a>
 
-        <?php
-        if (isset($_SESSION['user_role']) && $_SESSION['user_role'] == 'medewerker') {
-            echo '<a href="admin.php">Admin Page</a>';
-        }
+    <?php
+    if (isset($_SESSION['user_role']) && ($_SESSION['user_role'] == 'medewerker' || $_SESSION['user_role'] == 'admin')) {
+        echo '<a href="admin.php">Admin Page</a>';
+    }
 
-        if (isset($_SESSION['user_role'])) {
-            echo '<a class="login" href="logout.php">Logout</a>';
-        } else {
-            echo '<a class="login" href="login.php">Login | Register</a>';
-        }
-        ?>
-    </header>
+    if (isset($_SESSION['user_role'])) {
+        echo '<a class="login" href="logout.php">Logout</a>';
+    } else {
+        echo '<a class="login" href="login.php">Login | Register</a>';
+    }
+    ?>
+</header>
 </body>
 </html>
 

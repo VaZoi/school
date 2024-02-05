@@ -1,19 +1,17 @@
 <?php 
-
 include("db.php");
 $db = new database;
-
 
 $klanten = $db->selectklanten();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $voornaam = $_POST['voornaam'];
-    $achternaam = $_POST['achternaam'];
-    $email = $_POST['email'];
-    $geboortedatum = $_POST['geboortedatum'];
-    $adres = $_POST['adres'];
-    $telefoonnummer = $_POST['telefoonnummer'];
-    $rijbewijsnummer = $_POST['rijbewijsnummer'];
+    $voornaam = htmlspecialchars($_POST['voornaam']);
+    $achternaam = htmlspecialchars($_POST['achternaam']);
+    $email = htmlspecialchars($_POST['email']);
+    $geboortedatum = htmlspecialchars($_POST['geboortedatum']);
+    $adres = htmlspecialchars($_POST['adres']);
+    $telefoonnummer = htmlspecialchars($_POST['telefoonnummer']);
+    $rijbewijsnummer = htmlspecialchars($_POST['rijbewijsnummer']);
 
     $db->addKlant($voornaam, $achternaam, $email, $geboortedatum, $adres, $telefoonnummer, $rijbewijsnummer);
 }
@@ -49,6 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li class="active"><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -65,6 +65,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <li class="active"><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>

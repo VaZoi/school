@@ -1,7 +1,7 @@
 <?php
 
 $wachtwoord = $argv[1];
-$hash = password_hash($wachtwoord, PASSWORD_BCRYPT);
+$hash = password_hash($wachtwoord, PASSWORD_DEFAULT);
 
 echo $hash . PHP_EOL;
 

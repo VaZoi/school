@@ -1,0 +1,16 @@
+0 NV:
+FactuurNummer, datum, Naam klant, Adres, postcode, plaats,omschrijving, producten, bedrag per stuk, totaal, inclu btw,exclu btw, voor hoelang is product, 21% btw
+
+1 NV:
+Klant: PK:klant_id, Klantnaam, adres, postcode, plaats
+
+factuurnummer, producten, bedrag per stuk, omschrijving, totaal, inclu btw,exclu btw, voor hoelang is product, 21% btw
+
+2 NV:
+Klant: PK:klant_id, Klantnaam, adres, postcode, plaats
+Product: PK:product_id, omschrijving, prijs_per_stuk
+
+3NV:
+Klant: PK:klant_id, Klantnaam, adres, postcode, plaats
+Product: PK:product_id, omschrijving, prijs_per_stuk
+Factuur: PK:factuurnummer, datum, totaal_exclu_btw, 21%btw, totaal_inclu_btw, FK:klant_id, FK:product_id, aantal producten, aantal producten per product

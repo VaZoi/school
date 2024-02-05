@@ -1,38 +1,41 @@
-<?php 
+<?php
 
 include("db.php");
 $db = new database;
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $Boeking_klantID = $_POST['Boeking_klantID'];
-  $Boeking_autoID = $_POST['Boeking_autoID'];
-  $Boeking_Opdatum = $_POST['Boeking_Opdatum'];
-  $Boeking_Indatum = $_POST['Boeking_Indatum'];
-  $Boeking_Oplocatie = $_POST['Boeking_Oplocatie'];
-  $Boeking_Inlocatie = $_POST['Boeking_Inlocatie'];
-  $Boeking_Status = $_POST['Boeking_Status'];
+    $Boeking_klantID = htmlspecialchars($_POST['Boeking_klantID']);
+    $Boeking_autoID = htmlspecialchars($_POST['Boeking_autoID']);
+    $Boeking_Opdatum = htmlspecialchars($_POST['Boeking_Opdatum']);
+    $Boeking_Indatum = htmlspecialchars($_POST['Boeking_Indatum']);
+    $Boeking_Oplocatie = htmlspecialchars($_POST['Boeking_Oplocatie']);
+    $Boeking_Inlocatie = htmlspecialchars($_POST['Boeking_Inlocatie']);
+    $Boeking_Status = htmlspecialchars($_POST['Boeking_Status']);
 
-  $Boeking_Kost = isset($_POST['Boeking_Kost']) ? $_POST['Boeking_Kost'] : 0;
+    $Boeking_Kost = isset($_POST['Boeking_Kost']) ? htmlspecialchars($_POST['Boeking_Kost']) : 0;
 
-  $pickupDate = new DateTime($Boeking_Opdatum);
-  $returnDate = new DateTime($Boeking_Indatum);
-  $durationHours = $pickupDate->diff($returnDate)->h;
+    $pickupDate = new DateTime($Boeking_Opdatum);
+    $returnDate = new DateTime($Boeking_Indatum);
+    $durationHours = $pickupDate->diff($returnDate)->h;
 
-  $hourlyRate = 20;
-  $dailyRate = 120;
-  $monthlyRate = 3500;
+    $hourlyRate = 20;
+    $dailyRate = 120;
+    $monthlyRate = 3500;
 
-  $cost = 0;
-  if ($durationHours < 24) {
-      $cost = $durationHours * $hourlyRate;
-  } elseif ($durationHours >= 24 && $durationHours < (24 * 30)) {
-      $cost = ceil($durationHours / 24) * $dailyRate;
-  } else {
-      $cost = $monthlyRate;
-  }
+    $cost = 0;
+    if ($durationHours < 24) {
+        $cost = $durationHours * $hourlyRate;
+    } elseif ($durationHours >= 24 && $durationHours < (24 * 30)) {
+        $cost = ceil($durationHours / 24) * $dailyRate;
+    } else {
+        $cost = $monthlyRate;
+    }
 
-  $db->insertbooking($Boeking_klantID, $Boeking_autoID, $Boeking_Opdatum, $Boeking_Indatum, $Boeking_Oplocatie, $Boeking_Inlocatie, $Boeking_Status, $Boeking_Kost);
+    $db->insertbooking($Boeking_klantID, $Boeking_autoID, $Boeking_Opdatum, $Boeking_Indatum, $Boeking_Oplocatie, $Boeking_Inlocatie, $Boeking_Status, $Boeking_Kost);
+}
+
+if ($Boeking_Status === "Afgerond" || $Boeking_Status === "Geannuleerd") {
+    $db->updateAutoAvailability($Boeking_autoID, true);
 }
 
 $boekings = $db->selectbookings();
@@ -68,6 +71,8 @@ $boekings = $db->selectbookings();
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul>
     </div>
   </div>
@@ -84,6 +89,8 @@ $boekings = $db->selectbookings();
         <li><a href="admin_klanten.php">Klanten</a></li>
         <li><a href="admin_autos.php">Auto's</a></li>
         <li><a href="admin_locaties.php">Locaties</a></li>
+        <li><a href="home.php">Home Page</a></li>
+        <li><a href="logout.php">Logout</a></li>
       </ul><br>
     </div>
     <br>

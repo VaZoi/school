@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.active {
+    color: gold;
+    border-bottom: solid gold;
+}
+
+header a {
+    text-decoration: none;
+    color: #A80FFA;
+    margin: 10px;
+}
+
+header .img {
+    position: absolute;
+    left: 50px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #A80FFA;
+}
+
+section p {
+    margin: 10px 0;
+}
+
+section a {
+    color: #A80FFA;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    border-top: solid;
+    border-color: #001F3F;
+    padding: 20px;
+}
+
+footer a {
+    color: #A80FFA;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.allfooter {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    align-items: center;
+}
+
+.time,
+.contact {
+    flex: 1;
+    text-align: center;
+}
+
+.login {
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    right: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        width: 100%;
+    }
+}
